@@ -1,0 +1,50 @@
+
+div, div::before, div::after {
+  border:solid 2px #34bdeb;  
+}
+
+div {
+  width:75px;
+  height:75px;
+  left:400px;
+  top:54px;
+  border-radius:40px;  
+  position:absolute;;
+  z-index:1;
+  display:flex;
+  background-image: url("./middle.png");
+  object-fit:none;
+  overflow-x:visible;
+  overflow-y:visible;
+  justify-content: center; 
+}
+
+div::before {
+  width:50px;
+  height:50px;
+  background-image:url("./carrot.png");
+  border-radius:25px;
+  position:absolute;
+  font-size:12px;
+  content:"⬤  ⬤";
+  text-align:center;
+  justify-content:center;
+  vertical-align:center;
+  left:11px;
+  top:-52px;;
+  z-index:-1;
+  display:flex;
+}
+
+div::after {
+  display:block;
+  width:100px;
+  height:100px;
+  background:url("./bottom.png");
+  position:absolute;
+  z-index:-1;
+  content:"";
+  border-radius:50px;
+  top:75px;
+  left:-14px;
+}
